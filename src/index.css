@@ -1,0 +1,49 @@
+body {
+    margin: auto;
+    padding: auto;
+    height: auto;
+}
+
+#root {
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding: auto;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #fff 50%, #ff0 50%);
+}
+
+.patch1 {
+    position: fixed;
+    width: 100%;
+    height: 80%;
+    top: 10%;
+    left: 2%;
+    background-color: #fff;
+    z-index: -1;
+    animation: wave 8s ease-in-out infinite alternate;
+}
+
+.patch2 {
+    position: fixed;
+    width: 500%;
+    height: 500%;
+    top: 75%;
+    right: 0%;
+    background-color: #ff0;
+    z-index: -1;
+    animation: wave 8s ease-in-out infinite alternate;
+    /* i want patch2 to be circle */
+    border-radius: 50%;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(-50%) skew(0deg, 0deg);
+    }
+    to {
+        transform: translateY(0%) skew(0deg, 0deg);
+    }
+}
